@@ -3,25 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-header{
-    background-color:
-        color:
-    text-aling: center;
-    max-
-        
-    </style>
+    <title>Blog Haikyuu - Kenma Kozume</title>
+    <!-- Vinculando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <hl>titulo principal</hl>
-        <p>escrever brevemente o que tem no blog</p>
+        <h1>Kenma Kozume: O Cérebro do Nekoma</h1>
+        <p>Explore a mente estratégica, a ficha técnica e a evolução do levantador mais analítico de Haikyuu!!</p>
     </header>
+
     <main>
-        <h2>subtitulo</h2>
-        <p>escrever detalhadamente sobre o conteudo principal</p>
-        
+        <!-- Seção da Imagem -->
+        <div class="container-imagem">
+            <img src="https://crunchyroll.com" alt="Kenma Kozume jogando videogame com uniforme do Nekoma">
+        </div>
+
+        <h2>Quem é Kenma Kozume?</h2>
+        <p>Kenma Kozume é o levantador titular do Colégio Nekoma. Ao contrário da maioria dos jogadores de vôlei, ele não possui grande força física ou paixão explosiva pelo esporte. Sua principal arma é a sua inteligência genial. Ele observa friamente os adversários, prevê seus movimentos e dita o ritmo do jogo, sendo considerado o "cérebro" e o "coração" da equipe.</p>
+       
+        <h2>Ficha Técnica</h2>
+        <ul>
+            <li><strong>Idade:</strong> 16 - 17 anos</li>
+            <li><strong>Posição:</strong> Levantador (Setter)</li>
+            <li><strong>Número da Camisa:</strong> 5</li>
+            <li><strong>Gosta de:</strong> Videogames e Torta de Maçã</li>
+            <li><strong>Habilidade:</strong> Leitura de jogo impecável e estratégias dedutivas</li>
+        </ul>
+
+        <h2>Trajetória e Evolução</h2>
+        <p>Introduzido ao vôlei por seu melhor amigo Kuroo, Kenma via o esporte apenas como um passatempo cansativo. Tudo muda quando ele conhece Shoyo Hinata, do Colégio Karasuno. Essa rivalidade amigável desperta em Kenma o desejo real de vencer. No futuro, ele se torna um gamer profissional de sucesso, YouTuber (sob o codinome <span class="destaque">Kodzuken</span>) e CEO de sua própria empresa.</p>
+
+        <!-- Seção do Botão de Curtida -->
+        <div class="secao-curtida">
+            <button id="botao-curtir" class="btn-curtir">
+                ❤️ Curtir (<span id="contador-likes">0</span>)
+            </button>
+        </div>
     </main>
+
+    <!-- Script simples para fazer o botão de curtida funcionar -->
+    <script>
+        const botao = document.getElementById('botao-curtir');
+        const contador = document.getElementById('contador-likes');
+        let totalLikes = 0;
+
+        botao.addEventListener('click', () => {
+            totalLikes++;
+            contador.textContent = totalLikes;
+            botao.classList.add('curtido');
+        });
+    </script>
+
 </body>
 </html>
