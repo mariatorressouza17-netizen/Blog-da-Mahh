@@ -58,3 +58,117 @@
 
 </body>
 </html>
+
+
+/* Configurações Globais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #b01c1c; /* Vermelho oficial do Nekoma */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 100%;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Conteúdo Principal */
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #b01c1c;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.destaque {
+    font-weight: bold;
+    color: #b01c1c;
+}
+
+/* Estilização da Imagem */
+
+.container-imagem {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.container-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilização do Botão de Curtida */
+
+.secao-curtida {
+    text-align: center;
+    margin-top: 35px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.btn-curtir {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-curtir:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Cor que o botão assume após ser clicado */
+
+.btn-curtir.curtido {
+    background-color: #b01c1c;
+}
